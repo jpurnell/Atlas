@@ -13,6 +13,7 @@ public struct Country {
 		let uppercaseA = UnicodeScalar("A")!
 		let regionalIndicatorSymbolA = UnicodeScalar("\u{1f1e6}")!
 		let distance = unicodeScalar.value - uppercaseA.value
+		print(UnicodeScalar(regionalIndicatorSymbolA.value + distance))
 		return UnicodeScalar(regionalIndicatorSymbolA.value + distance)
 	}
 }
